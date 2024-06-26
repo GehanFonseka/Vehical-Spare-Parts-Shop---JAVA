@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>/vehicle_spare_part_Management</display-name>
+  
+  <error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/Error.jsp</location>
+	</error-page>
+	
+	<welcome-file-list>
+        <welcome-file>home.jsp</welcome-file>
+    </welcome-file-list>
+    
+    
+    <!-- login -->
+    <servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>VehicleSparepart.web.LoginServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<!-- logout -->
+    <servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>VehicleSparepart.web.LogoutServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Register -->
+    <servlet>
+		<servlet-name>RegisterSevlet</servlet-name>
+		<servlet-class>VehicleSparepart.web.RegisterSevlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>RegisterSevlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+    <!-- User -->
+     <servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>VehicleSparepart.web.UserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/insertUser</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>list_user</servlet-name>
+		<servlet-class>VehicleSparepart.web.UserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/list_user</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.UserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/updateUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.UserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/editUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.UserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/newUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.UserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/deleteUser</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!--Product  -->
+	
+	
+	<servlet>
+		<servlet-name>ProductServlet</servlet-name>
+		<servlet-class>VehicleSparepart.web.ProductServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/insertProduct</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>list_product</servlet-name>
+		<servlet-class>VehicleSparepart.web.ProductServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/list_product</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateProduct</servlet-name>
+		<servlet-class>VehicleSparepart.web.ProductServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/updateProduct</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editProduct</servlet-name>
+		<servlet-class>VehicleSparepart.web.ProductServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/editProduct</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newProduct</servlet-name>
+		<servlet-class>VehicleSparepart.web.ProductServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/newProduct</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteProduct</servlet-name>
+		<servlet-class>VehicleSparepart.web.ProductServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/deleteProduct</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--Cart  -->
+	
+	
+	<servlet>
+		<servlet-name>CartServlet</servlet-name>
+		<servlet-class>VehicleSparepart.web.CartServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CartServlet</servlet-name>
+		<url-pattern>/insertCart</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>list_cart</servlet-name>
+		<servlet-class>VehicleSparepart.web.CartServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CartServlet</servlet-name>
+		<url-pattern>/list_cart</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateCart</servlet-name>
+		<servlet-class>VehicleSparepart.web.CartServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CartServlet</servlet-name>
+		<url-pattern>/updateCart</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editCart</servlet-name>
+		<servlet-class>VehicleSparepart.web.CartServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CartServlet</servlet-name>
+		<url-pattern>/editCart</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newCart</servlet-name>
+		<servlet-class>VehicleSparepart.web.CartServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CartServlet</servlet-name>
+		<url-pattern>/newCart</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteCart</servlet-name>
+		<servlet-class>VehicleSparepart.web.CartServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CartServlet</servlet-name>
+		<url-pattern>/deleteCart</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!--Payment  -->
+	
+	
+	<servlet>
+		<servlet-name>PaymentServlet</servlet-name>
+		<servlet-class>VehicleSparepart.web.PaymentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentServlet</servlet-name>
+		<url-pattern>/insertPayment</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>list_payment</servlet-name>
+		<servlet-class>VehicleSparepart.web.PaymentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentServlet</servlet-name>
+		<url-pattern>/list_payment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updatePayment</servlet-name>
+		<servlet-class>VehicleSparepart.web.PaymentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentServlet</servlet-name>
+		<url-pattern>/updatePayment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editPayment</servlet-name>
+		<servlet-class>VehicleSparepart.web.PaymentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentServlet</servlet-name>
+		<url-pattern>/editPayment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newPayment</servlet-name>
+		<servlet-class>VehicleSparepart.web.PaymentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentServlet</servlet-name>
+		<url-pattern>/newPayment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deletePayment</servlet-name>
+		<servlet-class>VehicleSparepart.web.PaymentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentServlet</servlet-name>
+		<url-pattern>/deletePayment</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--Feedback  -->
+	
+	
+	<servlet>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<servlet-class>VehicleSparepart.web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/insertFeedback</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>list_feedback</servlet-name>
+		<servlet-class>VehicleSparepart.web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/list_feedback</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateFeedback</servlet-name>
+		<servlet-class>VehicleSparepart.web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/updateFeedback</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editFeedback</servlet-name>
+		<servlet-class>VehicleSparepart.web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/editFeedback</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newFeedback</servlet-name>
+		<servlet-class>VehicleSparepart.web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/newFeedback</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteFeedback</servlet-name>
+		<servlet-class>VehicleSparepart.web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/deleteFeedback</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--ProductUser  -->
+	
+	
+	<servlet>
+		<servlet-name>ProductByUserServlet</servlet-name>
+		<servlet-class>VehicleSparepart.web.ProductByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProductByUserServlet</servlet-name>
+		<url-pattern>/insertProductUser</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>sell_Item</servlet-name>
+		<servlet-class>VehicleSparepart.web.ProductByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProductByUserServlet</servlet-name>
+		<url-pattern>/sell_Item</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateProductUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.ProductByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProductByUserServlet</servlet-name>
+		<url-pattern>/updateProductUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editProductUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.ProductByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProductByUserServlet</servlet-name>
+		<url-pattern>/editProductUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newProductUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.ProductByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProductByUserServlet</servlet-name>
+		<url-pattern>/newProductUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteProductUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.ProductByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProductByUserServlet</servlet-name>
+		<url-pattern>/deleteProductUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>listAllProducts</servlet-name>
+		<servlet-class>VehicleSparepart.web.ProductByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProductByUserServlet</servlet-name>
+		<url-pattern>/listAllProducts</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>addToCart</servlet-name>
+		<servlet-class>VehicleSparepart.web.ProductByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProductByUserServlet</servlet-name>
+		<url-pattern>/addToCart</url-pattern>
+	</servlet-mapping>
+	
+	<!--CartUser  -->
+	
+	
+	<servlet>
+		<servlet-name>CartByUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.CartByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CartByUser</servlet-name>
+		<url-pattern>/insertCartUser</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>buy_list</servlet-name>
+		<servlet-class>VehicleSparepart.web.CartByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CartByUser</servlet-name>
+		<url-pattern>/buy_list</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateCartUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.CartByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CartByUser</servlet-name>
+		<url-pattern>/updateCartUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editCartUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.CartByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CartByUser</servlet-name>
+		<url-pattern>/editCartUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newCartUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.CartByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CartByUser</servlet-name>
+		<url-pattern>/newCartUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteCartUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.CartByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CartByUser</servlet-name>
+		<url-pattern>/deleteCartUser</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--PaymentUser  -->
+	
+	
+	<servlet>
+		<servlet-name>PaymentByUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.PaymentByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentByUser</servlet-name>
+		<url-pattern>/insertPaymentUser</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>list_paymentUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.PaymentByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentByUser</servlet-name>
+		<url-pattern>/list_paymentUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updatePaymentUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.PaymentByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentByUser</servlet-name>
+		<url-pattern>/updatePaymentUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editPaymentUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.PaymentByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentByUser</servlet-name>
+		<url-pattern>/editPaymentUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newPaymentUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.PaymentByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentByUser</servlet-name>
+		<url-pattern>/newPaymentUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deletePaymentUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.PaymentByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentByUser</servlet-name>
+		<url-pattern>/deletePaymentUser</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--FeedbackUser  -->
+	
+	
+	<servlet>
+		<servlet-name>FeedbackByUserServlet</servlet-name>
+		<servlet-class>VehicleSparepart.web.FeedbackByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackByUserServlet</servlet-name>
+		<url-pattern>/insertFeedbackUser</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>list_feedbackUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.FeedbackByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackByUserServlet</servlet-name>
+		<url-pattern>/list_feedbackUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateFeedbackUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.FeedbackByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackByUserServlet</servlet-name>
+		<url-pattern>/updateFeedbackUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editFeedbackUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.FeedbackByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackByUserServlet</servlet-name>
+		<url-pattern>/editFeedbackUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newFeedbackUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.FeedbackByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackByUserServlet</servlet-name>
+		<url-pattern>/newFeedbackUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteFeedbackUser</servlet-name>
+		<servlet-class>VehicleSparepart.web.FeedbackByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackByUserServlet</servlet-name>
+		<url-pattern>/deleteFeedbackUser</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
